@@ -5,6 +5,7 @@ import EditarComuna from '@/components/Comuna/EditarComuna.vue'
 import NewComuna from '@/components/Comuna/NewComuna.vue'
 import Municipios from '@/views/Municipios.vue'
 import EditarMunicipio from '@/components/Municipio/EditarMunicipio.vue'
+import NewMunicipio from '@/components/Municipio/NewMunicipio.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/editar-municipio/:id',
     name: 'EditarMunicipio',
     component: EditarMunicipio
+  },
+  {
+    path: '/add-municipio/',
+    name: 'NewMunicipio',
+    component: NewMunicipio
   },
   {
     path: '/about',

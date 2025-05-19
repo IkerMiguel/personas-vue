@@ -69,6 +69,9 @@ export default {
         editMunicipio(id){
             this.$router.push({ name: 'EditarMunicipio', params: { id: `${id}` } })
         },
+        newMunicipio() {
+            this.$router.push({name: 'NewMunicipio'});
+        }
     },
     mounted(){
         axios
