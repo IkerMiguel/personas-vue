@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Comunas from '@/views/Comunas.vue'
 import EditarComuna from '@/components/Comuna/EditarComuna.vue'
 import NewComuna from '@/components/Comuna/NewComuna.vue'
+import Municipios from '@/views/Municipios.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/add-comuna/',
     name: 'NewComuna',
     component: NewComuna
+  },
+  {
+    path: '/municipios',
+    name: 'Municipios',
+    component: Municipios
   },
   {
     path: '/about',
