@@ -10,6 +10,7 @@ import Departamento from '@/views/Departamento.vue'
 import EditarDepartamento from '@/components/Departamento/EditarDepartamento.vue'
 import NewDepartamento from '@/components/Departamento/NewDepartamento.vue'
 import Pais from '@/views/Pais.vue'
+import EditarPais from '@/components/Pais/EditarPais.vue'
 
 const routes = [
   {
@@ -66,6 +67,11 @@ const routes = [
     path: '/paises',
     name: 'Paises',
     component: Pais
+  },
+  {
+    path: '/editar-pais/:id',
+    name: 'EditarPais',
+    component: EditarPais
   },
   {
     path: '/about',
