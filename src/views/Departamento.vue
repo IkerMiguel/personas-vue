@@ -69,6 +69,9 @@ export default {
         editDepartamento(id){
             this.$router.push({ name: 'EditarDepartamento', params: { id: `${id}` } })
         },
+        newDepartamento() {
+            this.$router.push({name: 'NewDepartamento'});
+        }
     },
     mounted(){
         axios
