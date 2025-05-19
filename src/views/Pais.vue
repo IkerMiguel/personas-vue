@@ -67,6 +67,9 @@ export default {
     editPais(id) {
       this.$router.push({ name: 'EditarPais', params: { id: `${id}` } })
     },
+    newPais() {
+      this.$router.push({ name: 'NewPais' });
+    }
   },
   mounted() {
     axios
