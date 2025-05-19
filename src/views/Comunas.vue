@@ -65,7 +65,10 @@ export default {
                     })
                 }
             })
-        }
+        },
+        editComuna(id){
+            this.$router.push({ name: 'EditarComuna', params: { id: `${id}` } })
+        },
     },
     mounted(){
         axios
