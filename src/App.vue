@@ -5,6 +5,7 @@
     <router-link to="/comunas">Comunas</router-link> |
     <router-link to="/Municipios">Municipios</router-link> |
     <router-link to="/Departamentos">Departamentos</router-link> |
+    <router-link to="/Paises">Pais</router-link> |
   </nav>
   <router-view/>
 </template>
