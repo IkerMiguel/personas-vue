@@ -69,6 +69,9 @@ export default {
         editComuna(id){
             this.$router.push({ name: 'EditarComuna', params: { id: `${id}` } })
         },
+        newComuna() {
+            this.$router.push({name: 'NewComuna'});
+        }
     },
     mounted(){
         axios
