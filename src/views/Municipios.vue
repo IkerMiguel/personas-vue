@@ -66,6 +66,9 @@ export default {
                 }
             })
         },
+        editMunicipio(id){
+            this.$router.push({ name: 'EditarMunicipio', params: { id: `${id}` } })
+        },
     },
     mounted(){
         axios

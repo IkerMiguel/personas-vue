@@ -4,6 +4,7 @@ import Comunas from '@/views/Comunas.vue'
 import EditarComuna from '@/components/Comuna/EditarComuna.vue'
 import NewComuna from '@/components/Comuna/NewComuna.vue'
 import Municipios from '@/views/Municipios.vue'
+import EditarMunicipio from '@/components/Municipio/EditarMunicipio.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/municipios',
     name: 'Municipios',
     component: Municipios
+  },
+  {
+    path: '/editar-municipio/:id',
+    name: 'EditarMunicipio',
+    component: EditarMunicipio
   },
   {
     path: '/about',
