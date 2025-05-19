@@ -1,6 +1,11 @@
 <template>
     <div class="container">
-        <h1>Listado Comunas</h1>
+        <h1 class="text-start">Listado Comunas |
+            <button @click="newComuna()"
+                    class="btn btn-success mx-2">
+                    <font-awesome-icon icon="plus" />
+            </button>
+        </h1>
         <table class="table">
             <thead>
                 <tr>
@@ -8,6 +13,7 @@
                     <th class="col">Code</th>
                     <th class="col">Name</th>
                     <th class="col">Municipality</th>
+                    <th class="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -16,6 +22,16 @@
                     <td>{{ comuna.comu_codi }}</td>
                     <td>{{ comuna.comu_nomb }}</td>
                     <td>{{ comuna.muni_nomb }}</td>
+                    <td>
+                        <button @click="deleteComuna(comuna.comu_codi)"
+                                class="btn btn-danger mx-2">
+                                <font-awesome-icon icon="trash" />
+                        </button>
+                        <button @click="editComuna(comuna.comu_codi)"
+                                class="btn btn-warning mx-2">
+                                <font-awesome-icon icon="pencil" />
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
