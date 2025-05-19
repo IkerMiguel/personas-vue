@@ -47,7 +47,23 @@ export default {
     }
   },
   methods: {
-    
+    deletePais(code) {
+      Swal.fire({
+        title: `Do you want to delete the country with code ${code}?`,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          axios.delete(`http://127.0.0.1:8000/api/paises/${code}`)
+            .then(response => {
+              if (response.data.success) {
+                Swal.fire('Deleted!', '', 'success')
+                this.paises = response.data.paises
+              }
+            })
+        }
+      })
+    },
   },
   mounted() {
     axios
